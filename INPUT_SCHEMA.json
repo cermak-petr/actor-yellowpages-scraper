@@ -7,7 +7,7 @@
             "title": "Search",
             "type": "string",
             "editor": "textfield",
-            "prefill": "Los Angeles",
+            "prefill": "Dentist",
             "description": "Query to search on Yellow Pages"
         },
         "slocation": {
