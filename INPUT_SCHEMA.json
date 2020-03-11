@@ -35,7 +35,7 @@
             "type": "string",
             "editor": "javascript",
             "description": "A function which result will get merged with the default result",
-            "prefill": "(data) => {\n    return {};\n}",
+            "prefill": "($, record) => {\n    return {};\n}",
             "sectionCaption": "Advanced options"
         },
         "proxyConfiguration": {
