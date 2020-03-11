@@ -10,7 +10,7 @@
             "prefill": "Dentist",
             "description": "Query to search on Yellow Pages"
         },
-        "slocation": {
+        "location": {
             "title": "Location",
             "type": "string",
             "editor": "textfield",
