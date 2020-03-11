@@ -16,9 +16,9 @@ Yellow Pages Scraper is an [Apify actor](https://apify.com/actors) for scraping 
 | startUrls | array | List of [Request](https://sdk.apify.com/docs/api/request#docsNav) objects that will be deeply crawled. The URL can be any Yellowpages.com page | none |
 | maxItems | number | Maximum number of pages that will be scraped | `200` |
 | extendOutputFunction | string | Function that takes a Cheerio object and a Cheerio representation of the record element ($, record) as arguments and returns data that will be merged with the default output. More information in [Extend output function](#extend-output-function) | `($, record) => { return {}; }` |
-| proxyConfiguration | object | Proxy settings of the run. If you have access to Apify proxy, you can set `{ "useApifyProxy": true" }` to disable proxy usage | `{ "useApifyProxy": false }`|  
+| proxyConfiguration | object | Proxy settings of the run. If you have access to Apify proxy, you can set `{ "useApifyProxy": true" }` to enable proxy usage | `{ "useApifyProxy": false }`|  
 
-Either the `search` or `startUrls` atrribute has to be set.
+Either the `search` and `location` attributes or the `startUrls` atrribute has to be set.
 
 ### Output
 
