@@ -1,6 +1,6 @@
 ### Yellow Pages Scraper
 
-Yellow Pages Scraper is an [Apify actor](https://apify.com/actors) for scraping information from Yellow Pages listings. It allows you to search records based on a conbination of search term and location or a list of URLs. It is build on top of [Apify SDK](https://sdk.apify.com/) and you can run it both on [Apify platform](https://my.apify.com) and locally.  
+Yellow Pages Scraper is an [Apify actor](https://apify.com/actors) for scraping information from Yellow Pages listings. It allows you to search records based on a combination of search term and location or a list of URLs. It is build on top of [Apify SDK](https://sdk.apify.com/) and you can run it both on [Apify platform](https://my.apify.com) and locally.  
 
 - [Input](#input)
 - [Output](#output)
