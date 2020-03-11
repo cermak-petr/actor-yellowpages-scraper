@@ -1,0 +1,49 @@
+{
+    "title": "Firmy.cz actor input schema",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "search": {
+            "title": "Search",
+            "type": "string",
+            "editor": "textfield",
+            "prefill": "Los Angeles",
+            "description": "Query to search on Yellow Pages"
+        },
+        "slocation": {
+            "title": "Location",
+            "type": "string",
+            "editor": "textfield",
+            "prefill": "Los Angeles",
+            "description": "Location to search entries in"
+        },
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "editor": "requestListSources",
+            "description": "List of URLs that will be crawled."
+        },
+        "maxItems": {
+            "title": "Max items",
+            "type": "integer",
+            "minimum": 0,
+            "prefill": 200,
+            "description": "Maximum number of outputted results"
+        },
+        "extendOutputFunction": {
+            "title": "Extend output function",
+            "type": "string",
+            "editor": "javascript",
+            "description": "A function which result will get merged with the default result",
+            "prefill": "(data) => {\n    return {};\n}",
+            "sectionCaption": "Advanced options"
+        },
+        "proxyConfiguration": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "editor": "proxy",
+            "description": "In this case the best option is usually no proxy. Otherwise US or UK proxies work best.",
+            "prefill": { "useApifyProxy": false }
+        }
+    }
+}
