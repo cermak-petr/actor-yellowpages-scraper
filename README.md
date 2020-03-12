@@ -13,7 +13,7 @@ Yellow Pages Scraper is an [Apify actor](https://apify.com/actors) for scraping 
 | ----- | ---- | ----------- | -------------|
 | search | string | Query string to be searched on the site | `"Dentist"` |
 | location | string | Location string to search the records in | `"Los Angeles"` |
-| startUrls | array | List of [Request](https://sdk.apify.com/docs/api/request#docsNav) objects that will be deeply crawled. The URL can be any Yellowpages.com page | none |
+| startUrls | array | List of [Request](https://sdk.apify.com/docs/api/request#docsNav) objects that will be deeply crawled. The URL can be any Yellowpages.com record list page | none |
 | maxItems | number | Maximum number of pages that will be scraped | `200` |
 | extendOutputFunction | string | Function that takes a Cheerio object and a Cheerio representation of the record element ($, record) as arguments and returns data that will be merged with the default output. More information in [Extend output function](#extend-output-function) | `($, record) => { return {}; }` |
 | proxyConfiguration | object | Proxy settings of the run. If you have access to Apify proxy, you can set `{ "useApifyProxy": true" }` to enable proxy usage | `{ "useApifyProxy": false }`|  
@@ -43,7 +43,7 @@ Output is stored in a dataset. Each item is information about a record.
   ]
 }
 ```
-Not all attributes will be present with all the results.
+Please note that not all of the attributes will be present with all the results.
 
 ### Compute units consumption
 Keep in mind that it is much more efficient to run one longer scrape (at least one minute) than more shorter ones because of the startup time.
