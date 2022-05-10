@@ -1,0 +1,75 @@
+{
+    "actorSpecification": 1,
+    "name": "yellowpages-scraper",
+    "title": "Yellow Pages Scraper",
+    "description": "Scrapes results from Yellow Pages.",
+    "version": "0.0.1",
+    "storages": {
+        "dataset": {
+            "actorSpecification": 1,
+            "title": "Yellow Pages Scraper",
+            "description": "Too see all scraped properties, export the whole dataset or select All fields instead of Overview",
+            "views": {
+                "overview": {
+                    "title": "Overview",
+                    "description": "",
+                    "transformation": {
+                        "fields": [
+                            "image",
+                            "name",
+                            "address",
+                            "phone",
+                            "website",
+                            "rating",
+                            "reviewSnippet",
+                            "categories",
+                            "url"
+                        ]
+ 
+                    },
+                    "display": {
+                        "component": "table",
+                        "columns": [
+                            { "label": "",
+                                "format": "image",
+                                "field":  "image"
+                            },
+                            { "label": "Name",
+                                "format": "text",
+                                "field":  "name"
+                            },
+                            { "label": "Address",
+                                "format": "text",
+                                "field":  "address"
+                            },
+                            { "label": "Phone",
+                                "format": "text",
+                                "field":  "phone"
+                            },
+                            { "label": "Website",
+                                "format": "link",
+                                "field":  "website"
+                            },
+                            { "label": "rating",
+                                "format": "number",
+                                "field":  "rating"
+                            },
+                            { "label": "reviewSnippet",
+                                "format": "text",
+                                "field":  "reviewSnippet"
+                            },
+                            { "label": "categories",
+                                "format": "text",
+                                "field":  "categories"
+                            },
+                            { "label": "url",
+                                "format": "link",
+                                "field":  "url"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
