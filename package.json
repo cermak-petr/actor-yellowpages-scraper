@@ -2,7 +2,7 @@
     "name": "actor-yellowpages-scraper",
     "version": "0.0.1",
     "dependencies": {
-        "apify": "^0.20.0"
+        "apify": "^0.22.0"
     },
     "scripts": {
         "start": "node main.js"
