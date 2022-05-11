@@ -1,8 +1,12 @@
 {
     "name": "actor-yellowpages-scraper",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "dependencies": {
-        "apify": "^0.22.0"
+        "apify": "^2.3.2"
+    },
+    "devDependencies": {
+        "@apify/eslint-config": "^0.3.1",
+        "eslint": "^8.15.0"
     },
     "scripts": {
         "start": "node main.js"
