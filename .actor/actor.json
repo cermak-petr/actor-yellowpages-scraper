@@ -50,19 +50,19 @@
                                 "format": "link",
                                 "field":  "website"
                             },
-                            { "label": "rating",
+                            { "label": "Rating",
                                 "format": "number",
                                 "field":  "rating"
                             },
-                            { "label": "reviewSnippet",
+                            { "label": "Review snippet",
                                 "format": "text",
                                 "field":  "reviewSnippet"
                             },
-                            { "label": "categories",
+                            { "label": "Categories",
                                 "format": "text",
                                 "field":  "categories"
                             },
-                            { "label": "url",
+                            { "label": "URL on Yellow Pages",
                                 "format": "link",
                                 "field":  "url"
                             }
